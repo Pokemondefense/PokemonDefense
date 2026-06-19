@@ -1,0 +1,91 @@
+#hud {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 14px 20px;
+  border-radius: 12px;
+  color: white;
+  z-index: 100;
+  font-size: 18px;
+}
+
+#hud div {
+  min-width: 110px;
+}
+
+#coins {
+  color: gold;
+  font-weight: bold;
+}
+
+#hp {
+  color: #00ff66;
+  font-weight: bold;
+}
+
+#startWave {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #ff4444;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+#startWave:hover {
+  transform: scale(1.05);
+}
+
+#startWave:active {
+  transform: scale(0.95);
+}
+
+.panel {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 220px;
+  background: rgba(20, 20, 20, 0.85);
+  color: white;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.panel h3 {
+  margin-bottom: 12px;
+}
+
+.shop-item {
+  background: rgba(255,255,255,0.08);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.shop-item:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+@media (max-width: 768px) {
+  #hud {
+    top: 10px;
+    left: 10px;
+    gap: 10px;
+    padding: 10px;
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+
+  .panel {
+    width: 170px;
+    right: 10px;
+    top: 90px;
+  }
+}
